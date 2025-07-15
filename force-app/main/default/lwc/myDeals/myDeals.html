@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="My Deals" class="slds-m-around_medium">
+        <lightning-datatable
+                key-field="Id"
+                data={deals}
+                columns={columns}
+                draft-values={draftValues}
+                onsave={onSaveHandler}
+                hide-checkbox-column
+                show-row-number-column>
+        </lightning-datatable>  
+    </lightning-card>
+</template>
