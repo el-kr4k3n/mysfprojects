@@ -56,6 +56,17 @@ For lightning apps select `Sales` -> for profile select `System Administrator`
 
 Click Save. 
 
+---
+##  Apex Classes & Test Classes
+
+Each component is supported by its Apex controller and test class.
+
+| Component     | Controller Class           | Test Class                 |
+|---------------|----------------------------|----------------------------|
+| dealBrowser   | `DealBrowserController`    | `DealBrowserControllerTest`|
+
+---
+
 ##  2. `myDeals` Component
 
 Displays **all deals created by the logged-in user** with inline editing features.
@@ -68,14 +79,33 @@ Displays **all deals created by the logged-in user** with inline editing feature
 - Ownership check ensures users **only see and edit their own deals**
 
 ---
+## Add Tab on Sales App 
 
+Click on `gear icon` -> Go to **Setup** -> Search for **Tabs** -> open Tabs setting 
+
+Click on New for Custom Object Tabs -> Select Object – `Deal` -> Select a **Tab Style** 
+
+Save
+---
+## Adding component on Deal Tab 
+
+Go to **Deal Tab** ->-> Click on `gear icon` -> Edit Page 
+
+Click on **Pages** -> new pages -> Enter Name - `myDeals` and select **template** as `One Region` 
+
+Drag the custom lwc component – `myDeals` to **myDeals Page** 
+
+Click on **Activation** -> go to Lightning Experience -> Select `Sales` 
+
+Click **Save**. 
+
+---
 ##  Apex Classes & Test Classes
 
 Each component is supported by its Apex controller and test class.
 
 | Component     | Controller Class           | Test Class                 |
 |---------------|----------------------------|----------------------------|
-| dealBrowser   | `DealBrowserController`    | `DealBrowserControllerTest`|
 | myDeals       | `MyDealsController`        | `MyDealsControllerTest`    |
 
 ---
