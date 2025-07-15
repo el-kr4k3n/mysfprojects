@@ -42,6 +42,19 @@ Displays **all available deals** to users in a **card layout** with filters and 
   - Displays **success/failure toast**
 
 ---
+## Add component on Home page 
+ 
+Go to Sales Home page -> Click on **gear icon** -> Edit Page 
+
+Click on **Pages** -> **new pages** -> Enter Name - `New Home Page` and select template as **Standard Home Page** 
+
+Drag the custom lwc component – `dealBrowser` to **New Home Page** 
+
+Click on **Activation** -> go to **App and Profile** section -> **Add Assignments** 
+
+For lightning apps select `Sales` -> for profile select `System Administrator` 
+
+Click Save. 
 
 ##  2. `myDeals` Component
 
@@ -100,5 +113,6 @@ Create the following custom labels in **Setup → Custom Labels → New Custom L
 | `CATEGORY_OTHERS`       | Others       |
 
 ---
+
 
 Happy Coding! 🎉
